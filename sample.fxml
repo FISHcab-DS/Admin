@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.try1.Controller">
+    <children>
+        <TableView fx:id="tableView" layoutX="13.0" layoutY="127.0" prefHeight="338.0" prefWidth="823.0" style="-fx-background-color: rose; -fx-opacity: 50; -fx-border-color: white;">
+            <columns>
+                <TableColumn fx:id="driverColumn" prefWidth="203.2000150680542" text="Driver" />
+                <TableColumn fx:id="statusColumn" minWidth="0.0" prefWidth="105.59996032714844" text="Status" />
+                <TableColumn fx:id="capacityColumn" prefWidth="60.79998779296875" text="Capacity" />
+            <TableColumn fx:id="locationColumn" prefWidth="285.5999755859375" text="Location" />
+            <TableColumn fx:id="customerColumn" prefWidth="169.5999755859375" text="Customer" />
+            </columns>
+        </TableView>
+        <Button layoutX="694.0" layoutY="465.0" mnemonicParsing="false" onAction="#removeCustomer" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: none;" text="Remove Driver" textFill="#e16565">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+          <Text fill="#e16565fa" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver's Name :">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Text>
+          <TextField fx:id="driverInput" layoutX="103.0" layoutY="20.0" prefHeight="26.0" prefWidth="173.0" />
+          <Text fill="#e16565" layoutX="14.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status               : ">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Text>
+          <TextField fx:id="statusInput" layoutX="103.0" layoutY="73.0" prefHeight="26.0" prefWidth="174.0" />
+          <Text fill="#e16565" layoutX="295.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity :">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Text>
+          <TextField fx:id="capacityInput" layoutX="354.0" layoutY="20.0" prefHeight="26.0" prefWidth="194.0" />
+          <Button layoutX="650.0" layoutY="68.0" mnemonicParsing="false" onAction="#submit" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: rainbow;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="customerInput" layoutX="637.0" layoutY="20.0" prefHeight="26.0" prefWidth="182.0" />
+      <Text fill="#e16565" layoutX="571.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer :">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#e16565" layoutX="294.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location :">
+         <font>
+            <Font name="Dubai Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="locationInput" layoutX="354.0" layoutY="74.0" prefHeight="26.0" prefWidth="193.0" />
+    </children>
+</AnchorPane>
